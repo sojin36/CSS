@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 문의하기 영역 */
+.contact-form{
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: mediumaquamarine;
+}
+/* 제목 */
+.contact-form h2{
+    margin-bottom: 25px;
+}
+/* label은 한 줄을 차지하도록 설정 */
+.contact-form label{
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+}
+/* input, select, textarea 공통 스타일 */
+.contact-form input ,
+.contact-form select ,
+.contact-form textarea{
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    /* outline: none; */
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.contact-form textarea{
+    height: 150px;
+    /* 입력 내용이 길어지면 스크롤 */
+    resize: vertical;
+}
+.contact-form button{
+    all: unset;
+    width: 100%;
+    padding: 14px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+/* 마우스 올렸을 때 */
+.contact-form button:hover{
+    background-color: #555;
+    cursor: pointer;
+}
+/* -------------------------------------- */
+
+/* 전체영역 */
+.loagin{
+    background-color: pink;
+    margin: 50px auto;
+    width: 400px;
+    padding: 25px;
+}
+.loagin h2{
+    margin-bottom: 10px;
+}
+.loagin label{
+    display: block;
+    margin-top: 20px;
+}
+.loagin input{
+    display: block;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.loagin button{
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(204, 127, 255);
+    text-align: center;
+    border: 1px solid rgb(204, 127, 255); 
+}
+.loagin button:hover{
+    background-color: rgb(120, 182, 182);
+    cursor: pointer;
+}

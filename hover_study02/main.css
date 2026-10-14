@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* 전체레이아웃 */
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+/* 상단 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 100px;
+  background-color: aquamarine;
+}
+/* 상단로고 */
+/* header > a{} */
+.logo {
+  width: 200px;
+  /* height: 100px; */
+  line-height: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: black;
+font-family: "Libre Caslon Condensed", serif;
+}
+.logo:hover {
+  background-color: aquamarine;
+  color: red;
+}
+/* 메뉴 */
+header nav {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 50px;
+  background-color: rgb(228, 199, 255);
+}
+header nav a {
+  width: calc(100% / 4);
+  text-align: center;
+  line-height: 50px;
+  background-color: rgb(243, 186, 186);
+}
+header nav a:hover {
+  background-color: aqua;
+  color: blueviolet;
+}
+/* 메인 */
+main {
+  padding: 30px;
+  background-color: rgb(210, 255, 164);
+}
+h2{
+    margin-bottom: 20px;
+}
+section{
+    margin-bottom: 40px;
+}
+/* 전체설명 */
+.description {
+  display: flex;
+  gap: 30px;
+}
+/* 이미지 */
+.desc-img{
+    width: 500px;
+    background-color: rgb(214, 154, 154);
+    overflow: hidden;
+   border-radius: 20px; 
+}
+.desc-img img{
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+}
+.desc-img img:hover{
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+/* 자세한 설명 */
+.desc-detail{
+    width: 500px;
+    /* background-color: brown; */
+}
+/* 자세한 설명 상단 */
+.detail-top {
+  margin-bottom: 20px;
+}
+.description h3,
+.description h4  {
+    margin-bottom: 10px;
+}
+/* 하단 */
+footer{
+    color: #fff;
+    background-color: rgb(114, 160, 201);
+    padding: 30px;
+}
+footer a{
+    color: #fff;
+    margin: 0 20px;
+}

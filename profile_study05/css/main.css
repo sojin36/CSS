@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.member1{
+    background-color: rgb(147, 131, 233);
+}
+/* 프로필 카드 영역 */
+section{
+    width: 390px;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+/* 상단 메뉴 */
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    font-size: 18px;
+    color: #aaa;
+}
+/* 프로필 영역 */
+.profile{
+    display: flex;
+    background-color: a;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+/* 이미지 영역 */
+.profile-img{
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.profile-img img{
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+}
+.profile-img img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* 이름 */
+.profile-text h1{
+    font-size: 22px;
+    color: #555;
+    text-transform: uppercase;
+}
+.profile-text p{
+    font-size: 10px;
+    color: #888;
+}
+/* 더보기버튼 */
+.btn-view{
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 24px;
+    background-color: #10fcf0;
+    background: linear-gradient(45deg, #10fcf0, #7592fc);
+    box-shadow: 3px 3px 20px rgba(58, 212, 255, 0.5); 
+}
+.member2 .btn-view{
+    background: linear-gradient(45deg, );
+}
+.link-contact{
+    
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.contact li{
+    padding: 10px 0;
+    border-bottom: 1px solid #b92727;
+    gap: 20px;
+    color: #888;
+}
+.contact li:nth-child(3){
+    padding-top: 5px;
+    border: none
+}
+.contact span{
+    font-family: 'Times New Roman', Times, serif;
+}
+/* 멤버별 프로필 링크 영역 */
+.others{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.others a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e8a9f3;
+    filter: saturate(0.7);
+    opacity: 0.4;
+}
+.others a:nth-of-type(1){
+background-color: #35e0f7;
+}
+.others a:nth-of-type(2){
+background-color: #55f5cd;
+}
+.others a:nth-of-type(3){
+background-color: #ff80df;
+}
+.others a:nth-of-type(4){
+background-color: #a794fd;
+}
+.others a.on{
+    filter: saturate(1);
+    opacity: 1;
+    border: 1px solid;
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+/*관리자 페이지 영역*/
+.amin{
+    width: 100%;
+    margin: 50px auto;
+    background-color: mediumaquamarine;
+}
+.amin h2{
+    margin-bottom: 20px;
+}
+/* 표 */
+table{
+    width: 100%;
+    background-color: aliceblue;
+    border-collapse: collapse;
+}
+/* 제목 데이터 칸 */
+th, td{
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+th{
+    background-color: #333;
+    color: #fff;
+}
+/* 데이터 행에 마우스 올렸을 때*/
+tbody tr:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+/* 배송완료 */
+.complete{
+    font-weight: bold;
+    color: green;
+}

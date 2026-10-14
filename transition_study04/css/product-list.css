@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+/* 상단 */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: mediumpurple;
+}
+/* 메뉴 */
+nav{
+    background-color: pink;
+    
+}
+.menu{
+    width: 500px;
+    text-align: center;
+    display: flex;
+    
+}
+.menu > li{
+    flex: 1;
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    background-color: aqua;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 1;
+}
+.menu > li:hover .submenu{
+    display: block;
+}
+.menu > li:hover a{
+    background-color: paleturquoise;
+    display: block;
+}
+
+
+
+
+
+
+/* 전체 레이아웃 */
+.container{
+    width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: lightblue;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 상품 리스트 */
+.prod-list{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.prod-list li{
+    position: relative;
+    width: calc(100% / 3);
+    background-color: palegreen;
+}
+.prod-list img{
+    width: 100%;
+    display: block;
+}
+
+/* 상품 설명 영역 */
+.caption{
+    position: absolute;
+    top: 248;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    /* text-align: center; */
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+.caption h2{
+    margin-bottom: 10px;
+}
+.prod-list li:hover .caption{
+    top: 0;
+    opacity: 1;
+}
+
+/* ------------------------------------------------------------------------ */
+/* 전체 레이아웃 */
+.layout{
+    background-color: rgb(233, 131, 228);
+    margin: 50px auto;
+    width: 1500px;
+}
+.layout h1{
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 상품 리스트 */
+.layout-list{
+    display: flex;
+    gap: 40px;
+}
+.layout-list li{
+    position: relative;
+    width: calc(100%/3);
+    color: #fff;
+    background-color: rgb(224, 182, 248);
+}
+.layout-list img{
+    width: 100%;
+    display: block;
+}
+
+/* 제목 */
+.caption2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    flex-direction: column;
+    background-color: palevioletred;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.caption2 h2{
+    text-align: center;
+}
+.layout-list li:hover .caption2{
+    top: 0;
+    opacity: 1; 
+}

@@ -1,0 +1,126 @@
+.loding{
+    width: 50px;
+    height: 50px;
+    border-top: 5px solid #333;
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    /* animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; */
+    animation: loding 1s linear infinite;
+}
+@keyframes loding{
+    from{
+        transform: rotate(0deg);
+    }
+    fo{
+        transform: rotate(360deg);
+    }
+}
+.notice-btn{
+    all: unset;
+    border: 1px solid #ddd;
+    background-color: aqua;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+.notice-btn:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+    animation: btnMove 1.5s infinite;
+}
+@keyframes btnMove{
+    form{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+.banner{
+    width: 600px;
+    padding: 80px 40px;
+    background-color: #333;
+    color: #fff;
+}
+.banner h1{
+    animation: titleShow 1s ease-out;
+}
+.banner p{
+    animation: textShow 1s ease-out;
+    animation-delay: 0.5s;
+    /* 대기시간동안from opacity: 0; 이 유지됨 */
+    animation-fill-mode: backwards;
+}
+@keyframes titleShow{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.alarm{
+    display: inline-block;
+    font-size: 50px;
+    animation: shake 0.5s infinite;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    75%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+#loding{
+    position: relative;
+    width: 600px;
+    height: 40px;
+    background-color: lightblue;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#loding > div{
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    transform: skew(-244deg);
+    animation: flow-right 4s linear infinite;
+}
+
+#loding > div>div{
+    flex: 1;
+}
+#loding > div>div:nth-child(odd){
+    background-color: dodgerblue;
+}
+
+@keyframes flow-right{
+    from{
+        left:-600px
+    }
+    to{
+        left: 0;
+    }
+}

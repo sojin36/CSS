@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.area{
+    width: 100%;
+    height: 1000px;
+    background-color: aqua;
+}
+.area1{
+    background: url(./images/attachment/bg1.jpg) no-repeat center;
+    background-size: cover;
+}
+.area2{
+    background: url(./images/attachment/bg2.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.area3{
+    background: url(./images/attachment/bg3.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.area4{
+    background: url(./images/attachment/bg4.jpg) no-repeat center;
+    background-size: cover;
+}
+.area5{
+    background: url(./images/attachment/bg5.jpg) no-repeat center;
+    background-size: cover;
+}
+.area6{
+    background: url(./images/dog.jpg) no-repeat center;
+}

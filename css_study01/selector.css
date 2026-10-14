@@ -1,0 +1,12 @@
+/* div안에 있는 모든 p 선택 */
+.section1 p{
+    color: aquamarine;
+}
+
+/* 자식 선택자 */
+.section2 > p{
+    color: palevioletred;
+}
+section >p{
+    color: pink;
+}

@@ -1,0 +1,16 @@
+ul li:first-child{
+    color: palegreen;
+}
+ul li:last-child{
+    color: palevioletred;
+}
+ul li:nth-child(2){
+    color: paleturquoise;
+}
+
+/* 짝수 */
+ul li:nth-child(2n){
+    background-color: bisque;
+}
+
+/* + 형제 선택자 : 바로 다음 형제 선택 */

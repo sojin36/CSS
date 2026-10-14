@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 전체 레이아웃 */
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: mediumaquamarine;
+}
+/* 헤더 */
+header{
+    padding:30px;
+    background-color: aqua;
+    text-align: center;
+}
+/* 네비게이션 */
+nav{
+    color: #fff;
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+}
+nav a{
+    gap: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+/* 메인 영역 */
+main{
+    background-color: palevioletred;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+aside{
+    position: sticky;
+    top: 66.33px;
+    width: 30%;
+    padding: 20px;
+    background-color: skyblue;
+}
+.contents{
+    width: 70%;
+    background-color: aquamarine;
+}
+.section{
+    height: 500px;
+
+}
+/* 푸터 */
+footer{
+    padding: 20px;
+    background-color: darkcyan;
+    text-align: center;
+}
